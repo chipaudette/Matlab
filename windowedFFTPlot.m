@@ -3,7 +3,7 @@ function [pD,f,h]=windowedFFTPlot(data,N,overlap,fs,plots,windowing);
 %
 %assumes data is real
 %returns non-negative frequencies
-%returns power per bin (positive freq bin...I foled neg freq energy into positive freqs)
+%returns power per bin (positive freq bin...I fold neg freq energy into positive freqs)
 %
 %To plot dB/Hz instead of dB/bin:
 %   PSD_per_Hz = PSD / ((fs/2) / size(PSD,1));

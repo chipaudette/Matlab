@@ -4,8 +4,6 @@ function [data,start_ind,Noverlap,window]=blockData2(indata,N,overlap,windowing)
 %Note: Hanning window assumed by default.  Set windowing='no_windowing' to
 %      have no windowing of data blocks.
 
-% JLB 11/01/02 Modified to allow multi-channel inData.  
-% JLB 11/01/02 Changed procedure to use reshape and avoid for loops whenever possible.  
 
 if (nargin < 4)
   windowing=[];
